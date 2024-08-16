@@ -1,0 +1,49 @@
+{
+    "name": "hono-express-adapter",
+    "version": "1.0.0",
+    "description": "Just a simple express adapter for hono",
+    "scripts": {
+        "test": "vitest run",
+        "check": "biome check . --write",
+        "build": "tsup",
+        "doc": "typedoc src/index.ts --plugin typedoc-material-theme  --themeColor '#1C6EF3'"
+    },
+    "keywords": [
+        "hono",
+        "express",
+        "adapter"
+    ],
+    "author": "Akara Chen",
+    "license": "ISC",
+    "packageManager": "pnpm@9.7.1",
+    "devDependencies": {
+        "@akrc/tsconfig": "^1.1.0",
+        "@biomejs/biome": "^1.8.3",
+        "@types/express": "^4.17.21",
+        "@types/supertest": "^6.0.2",
+        "express": "^4.19.2",
+        "hono": "^4.5.5",
+        "supertest": "^7.0.0",
+        "tslib": "^2.6.3",
+        "tsup": "^8.2.4",
+        "typedoc": "^0.26.5",
+        "typedoc-material-theme": "^1.1.0",
+        "typescript": "^5.5.4",
+        "vitest": "^2.0.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/akarachen/hono-expresse-adapter.git"
+    },
+    "type": "module",
+    "types": "./dist/index.d.ts",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "exports": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+    },
+    "files": [
+        "dist"
+    ]
+}
