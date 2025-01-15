@@ -1,5 +1,7 @@
 # Hono Express Adapter
 
+Now `@hono/node-server` have a buildin function `getRequestListener`, this package is no longer needed anymore.
+
 ## Installation
 
 ```bash
